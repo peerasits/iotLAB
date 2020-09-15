@@ -1,3 +1,5 @@
+
+#include <stdio.h>
 #define ANALOG_PIN A0
 
 int analogValue = 0;

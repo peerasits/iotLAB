@@ -33,21 +33,27 @@ void loop() {
     OLED.clearDisplay();
     OLED.setTextColor(WHITE);
     OLED.setCursor(0,0);
-    OLED.setTextSize(3);
+    OLED.setTextSize(1);
     OLED.print("H:");
     OLED.println(String(h,0)+" %");
-    OLED.setCursor(0,30);
+    OLED.setCursor(0,5);
     OLED.print("T:");
     OLED.print(String(t,0)+" ");
     OLED.write(247);
     OLED.println("C");
-
-    /*
-OLED.setCursor(0,60);
+     Serial.print("Humidity: ");
+    Serial.print(h);
+    Serial.println("%");
+  Serial.print("Temperature: ");
+    Serial.print(t);
+    Serial.println(" *C");
+    delay(1000);
+    
+OLED.setCursor(0,10);
     OLED.print("L:");
   OLED.print(lux);
   OLED.print(" lx");
-  */
+  
     OLED.display();
 
 
